@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cat BMI Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+<body>
+
+<div class="container mx-auto">
+    <div class="jumbotron col-md-8 col-centered">
+        <h1 class="pb-4">Cat BMI Calculator</h1>
+
+        <form class="container" name="catform" id="catform">
+            <div class="form-row align-items-center">
+
+            <fieldset class="form-group ">
+
+                <div class="form-group row">
+                    <label for="name" class=" col-form-label">Name of the cat:</label>
+
+                      <input type="text" class="form-control" name="name" id="name" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="circumfence" class="col-form-label">Circumfence of the chest (in centimeters):</label>
+
+                        <input type="number" name="circumfence" id="circumfence" class="form-control" required>
+
+                </div>
+
+                <div class="form-group row">
+                    <label for="lim" class="col-form-label">LIM (length of 13/16, in centimeters):</label>
+
+                        <input type="number" name="lim" id="lim" class="form-control" required>
+                </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary" onclick='displayResult(this.form);return false;'>Calculate BMI</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+
+        <div id="updateArea">
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
